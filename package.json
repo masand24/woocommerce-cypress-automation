@@ -1,0 +1,25 @@
+{
+  "name": "woocommerce-automation",
+  "version": "1.0.0",
+  "description": "Automation test scripts for woocommerce using cypress ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test-ui": "npx cypress run --spec 'cypress/e2e/ui-validations/*.cy.js' ",
+    "test-regression": "npx cypress run --spec 'cypress/e2e/regression/*.cy.js' ",
+    "clean:folders": "rm -R -f allure-report/* && rm -R -f allure-results/*",
+    "allure:report": "npm run allure generate allure-results — clean -o allure-report && allure open allure-report"
+  },
+  "author": "Saurabh",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.2"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "allure-commandline": "^2.24.1",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}

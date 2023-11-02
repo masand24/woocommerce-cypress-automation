@@ -1,0 +1,7 @@
+{
+    "invalidCoupon": "CHRISTMAS_SALE_20",
+    "validCoupon": "lkjhggfdemo",
+    "fetchInvalidCode": "Coupon christmas_sale_20 does not exist!",
+    "fetchValidCodeResponse": "Coupon code applied successfully."
+  }
+  
