@@ -35,4 +35,3 @@ Cypress.Commands.add("getIframe", (iframeId) => {
     }
   });
 });
-

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1699284119620' stop='1699284125998'>
+    <name>Navigate to Cart page provide invalid coupon code and user must get error message</name>
+    <title>Navigate to Cart page provide invalid coupon code and user must get error message</title>
+    <test-cases>
+        <test-case start='1699284119620' status='passed' stop='1699284125998'>
+            <name>Provide invalid coupon code</name>
+            <title>Provide invalid coupon code</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1699287793505' stop='1699287828271'>
+    <name>Place an order for a laptop with invoice payment using Invalid and valid  billingInfo</name>
+    <title>Place an order for a laptop with invoice payment using Invalid and valid  billingInfo</title>
+    <test-cases>
+        <test-case start='1699287793505' status='failed' stop='1699287828242'>
+            <name>order by selecting Glasses product choose invoice and provide incorrect billing info</name>
+            <title>order by selecting Glasses product choose invoice and provide incorrect billing info</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 10000ms: expected '&lt;div.description>' to have text 'Success', but the text was 'The payment with invoice (Powerpay) is at the moment not possible. Possible reason you might find under: https://www.powerpay.ch/de'</message>
+                <stack-trace>AssertionError: Timed out retrying after 10000ms: expected '&lt;div.description>' to have text 'Success', but the text was 'The payment with invoice (Powerpay) is at the moment not possible. Possible reason you might find under: https://www.powerpay.ch/de'
+                    at Context.eval (webpack:///./cypress/support/pages/invoice-page.js:73:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1699284148205' stop='1699284168442'>
+    <name>Create a order by sorting the costliest item and place a order</name>
+    <title>Create a order by sorting the costliest item and place a order</title>
+    <test-cases>
+        <test-case start='1699284148206' status='passed' stop='1699284168442'>
+            <name>order by sorting item with highest price in the list</name>
+            <title>order by sorting item with highest price in the list</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

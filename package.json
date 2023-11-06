@@ -7,13 +7,16 @@
   "scripts": {
     "test-ui": "npx cypress run --spec 'cypress/e2e/ui-validations/*.cy.js' ",
     "test-regression": "npx cypress run --spec 'cypress/e2e/regression/*.cy.js' ",
+    "report": "npx cypress run --spec ./cypress/e2e/regression/*.js --browser chrome --reporter mocha-allure-reporter --env allure=true",
     "clean:folders": "rm -R -f allure-report/* && rm -R -f allure-results/*",
-    "allure:report": "npm run allure generate allure-results — clean -o allure-report && allure open allure-report"
+    "generate-allure-report": "allure generate allure-results  --clean -o allure-report && allure open allure-report",
+    "final-allure-report": "npm run report && npm run generate-allure-report"
   },
   "author": "Saurabh",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.17.2"
+    "cypress": "^12.17.2",
+    "cypress-snapshot": "^0.0.2-development1"
   },
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.0",
