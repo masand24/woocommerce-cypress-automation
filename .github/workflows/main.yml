@@ -1,13 +1,22 @@
-name: main
+name: Cypress Tests
+
 on: [push]
+
 jobs:
-  cypress-run:
+  cypress:
     runs-on: ubuntu-latest
-    name: Build and test
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.3.4
-      - name: Cypress.io
-        uses: cypress-io/github-actions@v2.9.7
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          browser: chrome
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress tests
+        run: npm run cypress:run
