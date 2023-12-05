@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1699543463596' stop='1699543484491'>
+    <name>Create a order by sorting the costliest item and place a order</name>
+    <title>Create a order by sorting the costliest item and place a order</title>
+    <test-cases>
+        <test-case start='1699543463596' status='broken' stop='1699543484457'>
+            <name>order by sorting item with highest price in the list</name>
+            <title>order by sorting item with highest price in the list</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 10050ms: `cy.click()` failed because this element:
+                
+                `&lt;label for="payment_method_wallee_6">...&lt;/label>`
+                
+                is being covered by another element:
+                
+                `&lt;div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: default; position: absolute;">&lt;/div>`
+                
+                Fix this problem, or use {force: true} to disable error checking.
+                
+                https://on.cypress.io/element-cannot-be-interacted-with</message>
+                <stack-trace>CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element:
+                
+                `&lt;label for="payment_method_wallee_6">...&lt;/label>`
+                
+                is being covered by another element:
+                
+                `&lt;div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: default; position: absolute;">&lt;/div>`
+                
+                Fix this problem, or use {force: true} to disable error checking.
+                
+                https://on.cypress.io/element-cannot-be-interacted-with
+                    at ensureIsDescendent (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:139711:76)
+                    at ensureDescendents (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:139762:5)
+                    at ensureDescendentsAndScroll (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:139768:14)
+                    at ensureElIsNotCovered (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:139899:5)
+                    at runAllChecks (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:140079:52)
+                    at retryActionability (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:140116:16)
+                    at tryCatcher (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:18744:23)
+                    at Promise.attempt.Promise.try (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:16018:29)
+                    at whenStable (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:156356:65)
+                    at &lt;unknown> (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:155797:14)
+                    at tryCatcher (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:18744:23)
+                    at Promise._settlePromiseFromHandler (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:16679:31)
+                    at Promise._settlePromise (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:16736:18)
+                    at Promise._settlePromise0 (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:16781:10)
+                    at Promise._settlePromises (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:16861:18)
+                    at Promise._fulfill (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:16805:18)
+                    at &lt;unknown> (https://woocommerce.showcase-wallee.com/__cypress/runner/cypress_runner.js:18419:46)
+                From Your Spec Code:
+                    at CheckoutPage.selectPaymentType (webpack:///./cypress/support/pages/checkout-page.js:37:29)
+                    at Context.eval (webpack:///./cypress/e2e/regression/Sorting-item-with-highest-price-placeOrder.cy.js:14:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

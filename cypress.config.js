@@ -8,7 +8,7 @@ export default defineConfig({
     baseUrl:"https://woocommerce.showcase-wallee.com/",
     chromeWebSecurity:false,
     // experimentalModifyObstructiveThirdPartyCode: true
-    experimentalSessionAndOrigin:true,
+   // experimentalSessionAndOrigin:true,
     defaultCommandTimeout: 10000, 
     pageLoadTimeout: 10000,
     setupNodeEvents(on, config) {

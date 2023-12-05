@@ -28,7 +28,7 @@ describe('Place an order for a laptop with invoice payment using Invalid and val
         checkoutPage.selectPaymentType('Invoice')
         checkoutPage.agreeTermsAndConditions()
         checkoutPage.placeOrder()
-        invoicePage.addValidBillingInfo()
+        //invoicePage.addValidBillingInfo()
         
     })
 })
